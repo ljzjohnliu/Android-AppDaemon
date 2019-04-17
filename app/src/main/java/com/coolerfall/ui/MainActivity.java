@@ -9,11 +9,11 @@ import com.coolerfall.service.DaemonService;
 
 public class MainActivity extends ActionBarActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-		startService(new Intent(this, DaemonService.class));
-	}
+        startService(new Intent(this, DaemonService.class));
+    }
 }
